@@ -1,0 +1,16 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "bringbackthedab-pledges",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-10-03",
+  "workers_dev": true,
+  "vars": {
+    "ALLOWED_ORIGINS": "https://mauricederbaum.github.io,https://bringbackthedab.com,https://www.bringbackthedab.com,http://localhost:5173"
+  },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "bringbackthedab-pledges",
+    "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID",
+    "migrations_dir": "migrations"
+  }]
+}
